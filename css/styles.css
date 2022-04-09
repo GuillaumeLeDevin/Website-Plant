@@ -3,6 +3,7 @@
 
 * {
     font-family: 'Montserrat';
+    box-sizing: border-box;
 }
 
 html {
@@ -15,6 +16,10 @@ header {
 }
 header img {
     width: 150px;
+}
+header a {
+    font-size: 22px;
+    width: 100%;
 }
 body {
     margin: 0 auto;
@@ -54,6 +59,9 @@ nav.nav {
     list-style: none;
     width: 400px;
     margin-left: 30px;
+}
+nav li {
+    padding-right: 20px;
 }
 nav li a{
     color: white;
@@ -101,7 +109,6 @@ nav li a{
 }
 .best-plants {
     min-height: 500px;
-    background-color: red;
     display: flex;
     flex-wrap: wrap;
 }
@@ -114,6 +121,7 @@ nav li a{
     background-size: cover;
     background-position: center;
     position: relative;
+    border-radius: 25px;
 }
 
 .no-grid {
@@ -140,6 +148,10 @@ nav li a{
     bottom: 0;
     width: 100%;
     padding: 5px 20px;
+    border: 1px solid #6ad400;
+    border-end-end-radius: 25px;
+    border-bottom-left-radius: 25px;
+    flex: 1;
 }
 .plant-name {
     font-size: 22px;
@@ -147,10 +159,10 @@ nav li a{
     line-height: 3px;
 }
 .plant-price {
-    color: #ADD981;
+    color: #2b5501;
     font-weight: 800;
     line-height: 3px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* Nos Plantes */
@@ -204,4 +216,28 @@ nav li a{
 footer a {
     text-decoration: none;
     color: black;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #2b5501;
+}
+@media screen and (max-width:900px) {
+    .big-title {
+        color: white;
+        font-size: 61px;
+        font-family: 'Abril Fatface', cursive;
+        font-weight: 100;
+        width: 60%;
+    }
+    .plant-name {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 2px;
+    }
+    .plant-price {
+        color: #2b5501;
+        font-weight: 800;
+        line-height: 2px;
+        font-size: 12px;
+    }
 }
